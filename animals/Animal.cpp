@@ -14,3 +14,16 @@ void Animal::Fight(Animal &opponent) {
 	}
 }
 
+void Hornet::Fight(Animal &opponent) {
+	// first animal wins ties
+	std::cout << this->GetPower() << std::endl;
+	std::cout << opponent.GetPower() << std::endl;
+	if (this->GetPower() >= opponent.GetPower()) {
+		std::cout << this->MakeSound() << std::endl;
+	} else {
+		if (anger_<8){
+			anger_++;
+			}
+		std::cout << opponent.MakeSound() << std::endl;
+	}
+}
