@@ -56,13 +56,13 @@ public:
 
 class Wombat : public Animal{
 public:
-	Wombat();
+	Wombat():
 	Animal("nom nom nom")
 	{}
 	
 	void EatGrass(); //wombat eats grass for some GAINZ
 	
-	int GetPower (return power_;);
+	int GetPower(){return power_;}
 
 private:
 	int power_;
