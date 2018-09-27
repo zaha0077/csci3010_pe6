@@ -2,4 +2,3 @@ language: cpp
 before_script: cd animals
 script:
     - make
-    - ./pe6
