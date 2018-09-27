@@ -25,10 +25,34 @@ public:
 
 
 	int GetPower() { return 7; };
-
+	
 };
 
 // Define your animals here
+class Cow : public Animal {
+public:
+	Cow():
+	Animal("Moo.")
+	{}
+
+	int GetPower() { return 9001; };
+};
+
+//The hornet. An animal that gets stronger the more it loses, 
+//until its power reaches a value of 10.
+class Hornet : public Animal {
+public:
+	Hornet():
+	Animal("angry buzzing")
+	{}
+
+	void Fight(Animal &opponent);
+
+	int GetPower(){ return 2+anger_; };
+	
+	private:
+	int anger_ = 0;
+};
 
 class Wombat : public Animal{
 public:
