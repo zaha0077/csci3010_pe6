@@ -29,6 +29,14 @@ public:
 };
 
 // Define your animals here
+class Cow : public Animal {
+public:
+	Cow():
+	Animal("Moo.")
+	{}
+
+	int GetPower() { return 9001; };
+};
 
 //The hornet. An animal that gets stronger the more it loses, 
 //until its power reaches a value of 10.
