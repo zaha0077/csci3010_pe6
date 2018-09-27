@@ -30,4 +30,19 @@ public:
 
 // Define your animals here
 
+class Wombat : public Animal{
+public:
+	Wombat();
+	Animal("nom nom nom")
+	{}
+	
+	void EatGrass(); //wombat eats grass for some GAINZ
+	
+	int GetPower (return power_;);
+
+private:
+	int power_;
+	
+};
+
 #endif  // _ANIMAL_H_

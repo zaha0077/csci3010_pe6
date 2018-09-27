@@ -14,3 +14,6 @@ void Animal::Fight(Animal &opponent) {
 	}
 }
 
+void Wombat::EatGrass(){
+	power_ = power_ + 5;
+}
